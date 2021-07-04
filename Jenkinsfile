@@ -14,7 +14,7 @@ pipeline{
                 echo "Hello , how are you doing everyone?"
 		pwd
 		ls -ltr
-                docker build -t node-server .
+                sudo docker build -t node-server .
 		kubectl get pods --kubeconfig=config
                 kubectl apply -f elasticstack/elasticsearch.yml --kubeconfig=config
                 kubectl apply -f elasticstack/kibana.yml --kubeconfig=config
