@@ -1,12 +1,12 @@
 pipeline{
     agent any
     stages{
-        stage('Git Checkout'){
-            steps{
-                checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'Git_cred', url: 'https://github.com/sagarprusty/Challenge1.git']]])
-            }
+//         stage('Git Checkout'){
+//             steps{
+//                 checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'Git_cred', url: 'https://github.com/sagarprusty/Challenge1.git']]])
+//             }
 
-        }
+//         }
         stage('Deploying ELK stack'){
             steps{
                 
