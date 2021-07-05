@@ -1,17 +1,28 @@
 pipeline{
     agent any
     stages{
-//         stage('Git Checkout'){
-//             steps{
-//                 checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'Git_cred', url: 'https://github.com/sagarprusty/Challenge1.git']]])
-//             }
 
-//         }
-        stage('Deploying ELK stack'){
+//  I've used a public image for hello world nodejs as i don't have a container registry. Line number 6-18 is alternative approach if we have one ACR/ECR for experimentation.       
+// 	    stage('Build Docker Image') {
+//              steps {
+		     
+// 		 sh """
+// 		      docker login ${DOCKER_REGISTRY_NAME} --username <username> --password-stdin
+// 		      docker build \
+// 		         -f Dockerfile \
+// 			 -t "${DOCKER_REGISTRY_NAME}/<SOME NAME>:${env.GIT_COMMIT}" .
+		
+// 		      docker push ${DOCKER_IMAGE}:${env.GIT_COMMIT}
+// 		    """
+// 	        }
+// 	   }
+	    
+	    
+	    stage('Deploying ELK stack for monitoring the pods'){
             steps{
                 
                 sh """
-                echo "Hello , how are you doing everyone?"
+                echo "Hello Condenast team, how are you doing everyone?"
 		pwd
 		ls -ltr
 		kubectl get pods --kubeconfig=config
