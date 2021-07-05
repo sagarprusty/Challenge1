@@ -65,7 +65,7 @@ In order to run hello world app on local machine:
 
 Check in browser using the url : https://public ip of esk8s-instance :31232
 
-**5) Access Kibana on local machine**
+**6) Access Kibana on local machine**
 
 In order to run Kibana on local machine:
 
