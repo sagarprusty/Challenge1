@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: nodongo
-        image: node-server
+        image: heroku/nodejs-hello-world
         ports:
         - containerPort: 3000
 
