@@ -4,7 +4,7 @@ AutomationChallenge
 
 ## **Automated provisioning of Nodejs hello world app and Elastic Stack on K8S (Backed by Minikube in AWS)**
 
-This repository covers automated provisioning of nodejs hello world and ElasticStack (*ElasticSearch/Filebeat/Kibana*) on Minikube. The setup includes provisoning an EC2 instance on AWS with Terraform and subsequently deploying *Docker, Minikube, kubectl, git, jq* inside the EC2 instance. CI/CD pipeline from jenkinsfile can then deploy ElasticStack on Minikube and run.
+This repository covers automated provisioning of nodejs hello world and ElasticStack (*ElasticSearch/Filebeat/Kibana*) on Minikube. The setup includes provisoning an EC2 instance on AWS with Terraform and subsequently deploying *Docker, Minikube, kubectl, git, jq* inside the EC2 instance. CI/CD pipeline from jenkinsfile can then deploy nodejs app and ElasticStack on Minikube and run.
 
 
 
