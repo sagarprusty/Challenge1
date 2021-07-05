@@ -63,13 +63,13 @@ Code push will trigger the Jenkins pipeline. Detailed steps can be seen in the c
 **5) Access Nodejs helloworld app on local machine**
 In order to run hello world app on local machine:
 
-Check in browser using the url : https://public ip of sagar-test :31232
+Check in browser using the url : https://public ip of esk8s-instance :31232
 
 **5) Access Kibana on local machine**
 
 In order to run Kibana on local machine:
 
-Check in browser using the url : https://public ip of sagar-test :30722
+Check in browser using the url : https://public ip of esk8s-instance :30722
 
 
 
