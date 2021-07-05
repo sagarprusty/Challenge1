@@ -26,6 +26,7 @@ metadata:
   labels:
     service: nodejs
 spec:
+  type: NodePort
   ports:
   - port: 3000
     name: client
