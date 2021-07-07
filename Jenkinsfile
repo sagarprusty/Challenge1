@@ -22,7 +22,7 @@ pipeline{
             steps{
                 
                 sh """
-                echo "Hello Condenast team, how are you doing everyone?"
+                echo "Hello Condenast team, how are you doing everyone ?"
 		pwd
 		ls -ltr
 		kubectl get pods --kubeconfig=config
